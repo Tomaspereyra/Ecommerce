@@ -1,0 +1,131 @@
+body{
+	font-family: sans-serif;
+	z-index: 0px;
+}
+
+.container{
+	position:absolute;
+	display: fixed;
+	/*Para que quede fijo al hacer scroll down*/
+	top:0px;
+	left:0px;
+	width: 100%;
+	height: 75px;
+	background-color: navy;
+	padding-top: 10px;
+	padding-left: 125px;
+	/*Para dejar lugar a la izquierda para el logo*/
+}
+
+
+h1{
+	font-size: 30px;
+	color: lightgray;
+}
+
+nav{
+	background-color: navy;
+	position: absolute;
+	padding-top:100px;
+	left: 0px;
+	width: 120px;
+	height:100%;
+	z-index: 0;
+}
+
+nav a{
+	display: block;
+	margin-left: 15px;
+	margin-top: 10px;	
+	padding: 10px;
+	border: 2px solid black;
+	border-radius: 10px;
+	width: 60px;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	background-color: lightgray;
+}
+
+a{
+	text-decoration:none;
+	color: black;
+}
+
+#logo{
+	position: absolute;
+	top: 20px;
+	left: 25px;
+	z-index:1000;
+	height: 55px;
+	width:70px;
+}
+
+section{
+	position: absolute;
+	top: 75px;
+	left:120px;
+	margin: 25px; 
+}
+
+.fotocategoria{
+	height: 150px;
+	width: 150px;
+	padding: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+	border: 30px solid grey;
+	border-radius: 30px;
+}
+
+.categoria{
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.producto{
+	margin-top: 30px;
+	border: 5px solid grey;
+}
+
+.fotoproducto {
+ height: 150px;
+	width: 150px;
+}
+
+.descripcionproducto{
+	width: 300px;
+	padding: 20x;
+}
+
+.celdaprecio{
+	text-align: center;
+ font-size: 40px;
+}
+
+.celdacomprar{
+	text-align:center;
+	border: 2px solid black;
+	background-color: grey;
+}
+.características {
+    margin: 20px ;
+    font-family: sans-serif ;
+}
+.fotosamsung {
+    height: 300px;
+	width: auto ;
+}
+.descripcionsamsung {
+	width: 150px;
+	padding: 20px;
+    font-size: 40px ;
+    font-weight: bold ;
+}
+div{
+	display:inline-block;
+}
+p{
+	margin-left:120px;
+	
+}

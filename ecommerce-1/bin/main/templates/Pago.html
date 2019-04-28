@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Pagina de pago</title>
+  <link rel="stylesheet" href="../static/css/estilo.css">
+</head>
+
+<body>
+  <div class="formadepago">
+    <div class="heading">
+      <h1>Confirmar Compra</h1>
+    </div>
+    <label for="monto">Monto a Pagar:</label>
+    <input type="number" id="monto" required="">
+    <h1>Forma de Pago</h1>
+    <h2>Efectivo</h2>
+    <div class="efectivo">
+      <form>
+        <div id="banco">
+          <label for="banco">Banco Depositado</label>
+          <input type="text" id="banco">
+        </div>
+        <div id="numerodeposito">
+          <label for="cardNumber">Numero Deposito</label>
+          <input type="number" id="numerodeposito" required="">
+        </div>
+      </form>
+      <h2>Tarjeta de Credito</h2>
+
+      <h4>Indique cantidad de cuotas que desea pagar</h4>
+
+      <label for="cuotas">
+        <span>Numero de Cuotas:</span>
+      </label>
+      <select id="numerocuotas">
+        <option value="01">1 Cuota</option>
+        <option value="02">3 Cuotas</option>
+        <option value="03">6 Cuotas</option>
+        <option value="04">12 Cuotas</option>
+      </select>
+      <label for="montocuota">Monto de cada cuota:</label>
+      <input type="number" id="montocuota" required="">
+      <form>
+        <div id="titular">
+          <label for="titular">Nombre de Titular</label>
+          <input type="text" id="titular" required="">
+        </div>
+        <div id="numerotarjeta">
+          <label for="numerotarjeta">Numero de Tarjeta</label>
+          <input type="number" id="numerotarjeta" required="">
+        </div>
+        <div id="CVV">
+          <label for="cvv">CVV</label>
+          <input type="number" id="cvv" required="">
+        </div>
+        <div id="fechaexpiracion" required="">
+          <label>Fecha de Expiracion</label>
+          <select>
+            <option value="01">Enero</option>
+            <option value="02">Febrero </option>
+            <option value="03">Marzo</option>
+            <option value="04">Abril</option>
+            <option value="05">Mayo</option>
+            <option value="06">Junio</option>
+            <option value="07">Julio</option>
+            <option value="08">Augosto</option>
+            <option value="09">Septiembre</option>
+            <option value="10">Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Diciembre</option>
+          </select>
+          <select>
+            <option value="19"> 2019</option>
+            <option value="20"> 2020</option>
+            <option value="21"> 2021</option>
+            <option value="22"> 2022</option>
+            <option value="23"> 2023</option>
+          </select>
+        </div>
+        <label for="tarjeta">
+          <span>Tipo de Tarjeta:</span>
+        </label>
+        <select id="tarjeta">
+          <option value="visa">Visa</option>
+          <option value="master">Mastercard</option>
+          <option value="amex">American Express</option>
+        </select>
+        <div id="pagar">
+          <button type="submit" id="pagar">Comprar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
